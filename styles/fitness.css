@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ @import url('https://fonts.cdnfonts.com/css/miama');
+.miama-font{
+  font-family:"Miama", sans-serif;
+  font-size:4rem;
+  font-weight:400;
+}
+
+                                                
+
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+/* shared styles */
+
+.background{
+  margin:0px;
+}
+ .display-flex{
+    display: flex;
+ }
+ .white-text{
+    color:rgba(255, 255, 255, 1);
+ }
+  .gray-text{
+    color:rgba(255, 255, 255, 0.5) ;
+  }
+  .btn-1{
+    background-color: rgba(230, 83, 60, 1);
+    padding:18px 40px;
+    border-radius:42px;
+    font-weight:700px;
+    font-size:1.125rem;
+    border:none;
+  }
+/* header styles */
+  
+.bg-color-1{
+  background: linear-gradient( 180deg ,rgba(17, 17, 17, 1),rgb(38, 38, 38),rgba(17, 17, 17, 1));
+}
+
+
+
+/* navbar related styles */
+.menu{
+  /* display:none; */
+  width:70px;
+  height:50px;
+  margin:6px;
+  /* background:transparent; */
+  
+}
+.bar{
+  height:10px;
+  width:10px;
+  border-radius:2px;
+  background:white;
+}
+
+  #home{
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 28px;
+    position:relative;
+    right:38px;
+    padding:10px 20px;   
+  }
+#italic{
+    color: rgba(230, 83, 60, 1);
+    font-size:2.5rem;
+    font-weight:800px;
+}
+.navbar{
+ justify-content: space-between;
+ padding-top:57px;
+}
+.nav-item{
+    padding-right:5px;
+}
+.nav{
+  gap:40px;
+  position: relative;
+  right:40px;
+}
+.nav-links{
+  list-style: none; 
+  gap:50px;
+  border:1px solid rgba(255, 255, 255, 0.1);
+  border-radius:40px;
+  height:32px;
+  width:420px;
+  padding-top:12px;
+}
+.nav-link{
+    text-decoration:none;
+    font-weight:700px;
+    font-size:1.125rem; 
+    padding-right:px;
+  }
+
+.navbar, .banner{
+    max-width:1440px;
+   
+    margin: 0 auto;
+    
+}
+.text{
+  margin-bottom:30px;
+}
+
+
+/* banner related styles */
+.intro-header{
+    font-size:4.8rem;
+    font-weight: 900;
+}
+.banner{
+    justify-content: space-between;
+}
+.btn-2{
+    padding:16px 40px;
+    border-radius:42px;
+    font-weight:700px;
+    font-size:1.125rem; 
+    border-color:white;
+    background-color:rgba(17, 17, 17, 1);
+    margin-left:15px;
+}
+#badge-1{
+  background: rgba(255, 255, 255, 0.1);
+  border:1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  bottom:390px;
+  left:260px;
+  width:206px;
+  height: 96px;
+  border-radius:12px;
+  backdrop-filter:blur(12px);
+  text-align: left;
+  padding-left:20px;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+#badge-2{
+  background: rgb(38, 38, 38, 0.54);
+  border:1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  bottom: 75px;
+  left: -265px;
+  width: 206px;
+  height: 96px;
+  border-radius:12px;
+  backdrop-filter:blur(12px);
+  font-weight:800px;
+}
+#boy-1{
+  position: relative;
+  left:400px;
+  top:12px;
+}
+#circle{
+  background:  rgba(230, 83, 60, 1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position:relative;
+  top:22px;
+  left:6px;
+}
+
+
+
+#badge-number-1{
+  font-weight:900;
+  font-size:2.5rem;
+  color:white;
+}
+
+
+
+#badge-number-2{
+  font-weight:700;
+  font-size:1.5rem;
+  color:white;
+}
+.badge-info{
+  text-align:left;
+  position: relative;
+  left:70px ;
+  bottom: 20px;
+  font-size:1rem;
+}
+
+/* media query */
+@media screen and (max-width:576px)
+{
+
+  .background{
+    max-height:1024 ;
+  }
+.menu{
+  display:flex;
+}
+.nav-links{
+  display:none;
+}
+
+#italic{
+  margin-left:10px;
+}
+.banner{
+  flex-direction:column;
+}
+.intro-header{
+  margin-left:10px;
+  font-size:2.25rem;
+}
+.text{
+  margin-left:10px;
+}
+.content-1{
+  margin-top:60px;
+  margin-right:80px;
+}
+ .button{
+ margin-left: 10px;
+ }
+
+ .btn-1{
+  margin-top: 40px;
+  padding: 16px 25px ;
+ }
+ .btn-2{
+  margin-top:40px;
+  padding: 16px 25px ;
+ }
+
+ .banner{
+  justify-content: center;
+ }
+.boy{
+position: relative;
+right:360px;
+top:40px;
+}
+#badge-1{
+  position: relative;
+  left:588px;
+  bottom:540px;
+  width:155px;
+  height:88px;
+  font-size:0.70rem;
+}
+#badge-number-1{
+  font-size:1.8rem;
+}
+
+#badge-2{
+  position:relative;
+  left: 250px;
+  bottom:320px;
+  width:155px;
+  height:88px;  
+}
+
+.badge-info{
+  font-size:0.70rem;    
+}
+
+
+}
