@@ -3,7 +3,7 @@
  @import url('https://fonts.cdnfonts.com/css/miama');
 .miama-font{
   font-family:"Miama", sans-serif;
-  font-size:4rem;
+  font-size:9rem;
   font-weight:400;
 }
 
@@ -26,6 +26,9 @@
  .display-flex{
     display: flex;
  }
+ .bg-color-3{
+  background-color: rgba(34, 34, 34, 1);
+ }
  .white-text{
     color:rgba(255, 255, 255, 1);
  }
@@ -46,11 +49,15 @@
   background: linear-gradient( 180deg ,rgba(17, 17, 17, 1),rgb(38, 38, 38),rgba(17, 17, 17, 1));
 }
 
+.intro-header{
+  line-height:78px;
+}
 
 
 /* navbar related styles */
 .menu{
   /* display:none; */
+  color: aliceblue;
   width:70px;
   height:50px;
   margin:6px;
@@ -104,9 +111,9 @@
     padding-right:px;
   }
 
-.navbar, .banner{
+.navbar, .banner, .habits, .excercise, .running-man, .bmi-section, .calculator{
     max-width:1440px;
-   
+ 
     margin: 0 auto;
     
 }
@@ -163,6 +170,7 @@
   position: relative;
   left:400px;
   top:12px;
+
 }
 #circle{
   background:  rgba(230, 83, 60, 1);
@@ -196,11 +204,174 @@
   bottom: 20px;
   font-size:1rem;
 }
+/* habit section */
+.bg-color-2{
+  background:black;
+}
+.habit-text{
+  text-align:center;
+}
 
+.habits{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.habit-info{
+padding-bottom:40px;
+
+}
+.excercise{
+  display: flex;
+  gap:10px;
+}
+.alignment{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-items: center;
+
+}
+
+.common-title{
+  margin-top:50px;
+  height:20px;
+  font-size:3rem;
+  font-weight:800 ;
+}
+.habit-heading{
+font-size:1.125rem;
+font-weight:700;
+}
+.excercise-pic{
+  height: 240px;
+  width:240px;
+  border:6px solid rgba(34, 34, 34, 1) ;
+  border-radius:50% ;
+}
+ .running-man{
+  margin-top:60px;
+  display:flex;
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 18px;
+  justify-content:space-between;
+  width:1200px;
+ }
+.runner{
+  height: 312px;
+  width:400px;
+  padding:35px ;
+  border:1px solid  rgba(34, 34, 34, 1);
+  border-radius: 60px;  
+  margin-top:8px ;
+}
+.extra-mile{
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-left: 40px;
+}
+.runner-text-custom{
+  width: 480px;
+}
+.runner-text{
+  margin:60px auto 20px 0px;
+}
+.runner-btn{
+  background-color: rgba(230, 83, 60, 1);
+  padding:12px 50px;
+  border-radius:42px;
+  font-weight:700px;
+  font-size:1.125rem;
+  border:none;
+  margin-top: 30px;
+}
+/* BMI Calculator */
+.bmi-text-1{
+  display: flex;
+  flex-direction:column;
+  line-height:0px;
+  align-items: center;
+}
+.bmi-heading{
+  text-align: left;
+  padding-right:600px ;
+  font-size:3rem;
+  padding-top:60px;
+}
+.bmi-text-2{
+  padding-right:325px ;
+  font-size:1rem;
+  margin-bottom: 40px;
+}
+
+.chart-heading{
+  font-size:1.75rem;
+}
+.calculator{
+  width:900px;
+  padding-top:40px;
+}
+
+.weight-status {
+  display:grid;
+  grid-template-columns:160px 160px;
+  
+}
+.item{
+  border:1px solid rgba(255, 255, 255, 0.1);
+  color:rgba(255, 255, 255, 0.6);
+  
+  padding: 20px;
+}
+.calculation{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top:60px;
+
+}
+.chart{
+  display:flex;
+  flex-direction:row;
+}
+.bmi-status{
+ position: relative;
+ left:400px;
+}
+.input-1{
+ width: 400px;
+ height:50px;
+ background-color: rgba(255, 255, 255, 0.1);
+ border: none;
+ border-radius: 10px;
+ border: none;
+ border-radius: 10px;
+}
+
+
+.input-2{
+  width: 820px;
+  height: 50px;
+  background-color:rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.calculation-area{
+  margin-top: 50px;
+}
 /* media query */
 @media screen and (max-width:576px)
 {
-
+ .miama-font{
+  font-size:4.8rem;
+ }
+ .intro-header{
+  line-height:40px;
+ }
   .background{
     max-height:1024 ;
   }
@@ -212,17 +383,17 @@
 }
 
 #italic{
-  margin-left:10px;
+  margin-left:20px;
 }
 .banner{
   flex-direction:column;
 }
 .intro-header{
-  margin-left:10px;
+  margin-left:20px;
   font-size:2.25rem;
 }
 .text{
-  margin-left:10px;
+  margin-left:20px;
 }
 .content-1{
   margin-top:60px;
@@ -233,11 +404,11 @@
  }
 
  .btn-1{
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 16px 25px ;
  }
  .btn-2{
-  margin-top:40px;
+  margin-top:80px;
   padding: 16px 25px ;
  }
 
@@ -247,11 +418,12 @@
 .boy{
 position: relative;
 right:360px;
-top:40px;
+top:94px;
+
 }
 #badge-1{
   position: relative;
-  left:588px;
+  left:580px;
   bottom:540px;
   width:155px;
   height:88px;
@@ -272,6 +444,46 @@ top:40px;
 .badge-info{
   font-size:0.70rem;    
 }
+  /* runner section */
+.habit-text-custom{
+  width:220px;
+}
 
 
+
+  .excercise{
+    display: flex;
+    flex-direction:column;
+  }
+  .running-man{
+    flex-direction:column;
+    /* padding-left:8px; */
+    width:340px;
+  }
+  .runner{
+    border:none;
+    height:170px;
+    width:264px ;
+  }
+  .runner-text{
+    text-align:left;
+  }
+  .runner-text-custom{
+    width:280px;
+  }
+
+  .common-title{
+    font-size:2rem;
+  }
+  .habits{
+    flex-direction:column;
+    align-items:center;
+  }
+  .habit-info{
+    text-align: center;
+  }
+  .runner-btn{
+    padding:16px 80px;
+    margin-left: 18px;
+  }
 }
