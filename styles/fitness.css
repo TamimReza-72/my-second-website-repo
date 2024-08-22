@@ -111,7 +111,7 @@
     padding-right:px;
   }
 
-.navbar, .banner, .habits, .excercise, .running-man, .bmi-section, .calculator{
+.navbar, .banner, .habits, .excercise, .running-man, .bmi-section, .measurement-area {
     max-width:1440px;
  
     margin: 0 auto;
@@ -325,12 +325,14 @@ font-weight:700;
   padding: 20px;
 }
 .calculation{
-  display: grid;
-  grid-template-columns:repeat(2,1fr);
-  row-gap: 10px;
-  column-gap: 10px;
+  display:flex;
+  flex-direction: column;
+  gap:4px;
   margin-top:60px;
-
+}
+.calculation-area{
+position: relative;
+right: 100px;
 }
 .chart{
   display:flex;
@@ -338,7 +340,7 @@ font-weight:700;
 }
 .bmi-status{
  position: relative;
- left:400px;
+ /* left:400px; */
 }
 .input-1{
  width: 400px;
@@ -348,21 +350,35 @@ font-weight:700;
  border-radius: 10px;
  border: none;
  border-radius: 10px;
+ padding-left:8px;
 }
 
 
 .input-2{
-  width: 820px;
+  width: 816px;
   height: 50px;
   background-color:rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 12px;
-  margin-top: 10px;
+  padding-left:8px;
 }
-
 .calculation-area{
   margin-top: 50px;
 }
+.calculate-btn{
+  width:200px;
+}
+  
+  
+
+.placeholder{
+  padding-left:10px;
+}
+
+
+
+
+
 /* media query */
 @media screen and (max-width:576px)
 {
@@ -486,4 +502,61 @@ top:94px;
     padding:16px 80px;
     margin-left: 18px;
   }
+  .chart{
+    flex-direction: column;
+  }
+.bmi-status{
+  position: relative;
+  left:35px;
+}
+.bmi-text-1{
+  
+position: relative;
+left:140px; 
+font-size:1.5rem;
+}
+.bmi-heading{
+  position: relative;
+left:150px;
+font-size:2rem;
+line-height:30px;
+width:300px;
+} 
+.bmi-text-2{
+  font-size:1rem;
+  width: 280px;
+  line-height: 30px;
+}
+.input-1{
+  width: 174px;
+  margin-left:5px;}
+
+  
+.input-2{
+  
+  width:370px;
+  margin-left:4px;
+}
+.calculation{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  
+}
+.chart-text{
+  padding-left: 10px;
+}
+.calculate-btn{
+  position: relative;
+  bottom:20px;
+  right:12px ;
+  padding:12px 20px;
+ 
+}
+.calculation-area{
+  position: relative;
+  left:2px;
+}
+
+
 }
