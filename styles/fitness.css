@@ -6,11 +6,7 @@
   font-size:9rem;
   font-weight:400;
 }
-
-                                                
-
-
-
+          
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -55,15 +51,7 @@
 
 
 /* navbar related styles */
-.menu{
-  /* display:none; */
-  color: aliceblue;
-  width:70px;
-  height:50px;
-  margin:6px;
-  /* background:transparent; */
-  
-}
+
 .bar{
   height:10px;
   width:10px;
@@ -78,7 +66,7 @@
     right:38px;
     padding:10px 20px;   
   }
-#italic{
+.italic{
     color: rgba(230, 83, 60, 1);
     font-size:2.5rem;
     font-weight:800px;
@@ -111,7 +99,7 @@
     padding-right:px;
   }
 
-.navbar, .banner, .habits, .excercise, .running-man, .bmi-section, .measurement-area {
+.navbar, .banner, .habits, .excercise, .running-man, .bmi-section, .measurement-area,.team-section, .image-section, .footer, .rights {
     max-width:1440px;
  
     margin: 0 auto;
@@ -311,6 +299,7 @@ font-weight:700;
 .calculator{
   width:900px;
   padding-top:40px;
+  margin-bottom: 40px;
 }
 
 .weight-status {
@@ -368,17 +357,90 @@ right: 100px;
 .calculate-btn{
   width:200px;
 }
-  
-  
-
 .placeholder{
   padding-left:10px;
 }
 
+/* team-section */
+.team-section{
+  margin-top: 80px;
+  text-align: center;
+}
+.trainer{
+  position: relative;
+  bottom:50px;
 
+}
+.trainer-section{
+  position: relative;
+  bottom:20px;
+}
 
+.image-section{
+  display:grid;
+grid-template-columns:repeat(3,1fr);
+  background-color: rgba(34, 34, 34, 1);
+  width:900px;
+  height: 540px;
+  padding-left:20px;
+  padding-top:10px;
+  border-radius:28px;
+}
+.text{
+  position:relative;
+  bottom:40px;
+  color:white;
+  padding-left:4px;
+  
+}
+ .trainer-img{
+  width:280px;
+  height:242px;
+  position:relative;
+  top:10px;
+  border-radius:18px;
+ }
+ .team-heading{
+  font-size:3rem;
+  line-height:20px
+ }
+ .team-text{ 
+  font-size:1rem;
+  padding-bottom: 20px;
+ }
 
-
+ /* footer section */
+ .footer{
+  justify-content: space-around;
+ }
+ .logo{
+  font-size:4.3rem;
+ }
+ .footer-heading{
+  font-size:2rem;
+  margin-left: 30px;
+ }
+ .info, .service{
+  margin-top:40px;
+ }
+ .line{
+  margin-top: 40px; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1460px;
+ }
+ .service-text{
+  width:700px;
+ }
+ .service{
+  text-align:left;
+ }
+ .last-text{
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:10px;
+  color:rgba(255, 255, 255, 0.5);
+  font-size:1.25rem;
+ }
 /* media query */
 @media screen and (max-width:576px)
 {
@@ -391,9 +453,8 @@ right: 100px;
   .background{
     max-height:1024 ;
   }
-.menu{
-  display:flex;
-}
+
+
 .nav-links{
   display:none;
 }
@@ -557,6 +618,53 @@ width:300px;
   position: relative;
   left:2px;
 }
+.image-section{  display:flex;
 
+  flex-direction: column;
+
+align-items: center;
+width:340px;
+height:1850px;
+padding-right: 18px;
+
+
+}
+.trainer-img{
+  width: 340px;
+
+}
+  
+.trainer-1{
+  position: relative;
+  top: 60px;
+}
+  .trainer-2{
+    position: relative;
+    top: 60px;
+  }
+  .trainer-3{
+    position: relative;
+    top: 60px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+.info{
+  text-align:left;
+  padding-left:16px;
+}
+
+.service-text{
+  width: 400px;
+}
+.line{
+  width: 360px;
+}
+.last-text{
+  width:300px;
+  padding-bottom:80px;
+  padding-left:60px;
+}
 
 }
